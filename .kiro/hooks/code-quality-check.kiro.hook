@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Code Quality Self-Check",
+  "description": "After writing code, verifies code quality principles.",
+  "version": "1",
+  "when": {
+    "type": "postToolUse",
+    "toolTypes": ["write"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A code file was just written. If source code (not config/docs), verify: 1) Business logic in pure functions 2) File under 300 lines 3) Each function does one thing 4) Dependencies on abstractions 5) Correct folder. Fix violations. Ignore for non-code files."
+  }
+}

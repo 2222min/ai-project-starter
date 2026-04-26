@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Document-First Change Reminder",
+  "description": "Reminds to update docs before modifying code.",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": ["write"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Before modifying code files, verify: Have the relevant docs been updated first? If this is a feature change and docs have NOT been updated, update docs first. If this is part of an already-documented plan or a non-code file, proceed normally."
+  }
+}

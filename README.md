@@ -1,33 +1,47 @@
-# 🚀 AI Project Starter Template
+# AI Project Starter Template
 
-> Kiro, Claude, Codex 세 가지 AI 도구 모두에서 사용할 수 있는 범용 프로젝트 초기 세팅 템플릿
+> Kiro, Claude, Codex, Cursor, Copilot - all AI tools supported with one template.
 
-## 사용법
-
-### 1. 새 프로젝트 시작
+## Quick Start
 ```bash
-cp -r ~/Desktop/ai-project-starter ~/Desktop/내프로젝트이름
+cp -r ~/Desktop/ai-project-starter ~/Desktop/my-new-project
 ```
+Then tell any AI tool your app idea. The 9-step flow runs automatically.
 
-### 2. AI 도구별 설정
+## AI Tool Config Map
 
-| AI 도구 | 설정 파일 | 자동 적용 |
-|---------|----------|----------|
-| **Kiro** | `.kiro/steering/*.md` | ✅ 자동 (steering) |
-| **Claude** | `CLAUDE.md` | ✅ 자동 (Project Instructions) |
-| **Codex** | `AGENTS.md` | ✅ 자동 (Agent Instructions) |
-| **Cursor** | `.cursorrules` | ✅ 자동 |
-| **Copilot** | `.github/copilot-instructions.md` | ✅ 자동 |
+| AI Tool | Config File | Auto-applied |
+|---------|------------|-------------|
+| Kiro | .kiro/steering/*.md + .kiro/hooks/*.hook | Yes |
+| Claude | CLAUDE.md | Yes |
+| Codex | AGENTS.md | Yes |
+| Cursor | .cursorrules | Yes |
+| Copilot | .github/copilot-instructions.md | Yes |
 
-### 3. 프로젝트 시작하기
-아무 AI 도구에서 아이디어만 말하면 9단계 플로우가 자동 실행됩니다:
-```
-직장인을 위한 심플한 TODO 앱 만들고 싶어
-```
+## What is Included
 
-## 핵심 철학
-- 🪶 가볍게 시작 — 최소 기능으로 빠르게
-- 💰 비용 최소화 — 서버 비용 월 $0 목표
-- 🔄 반복 리뷰 — AI 멀티 페르소나 리뷰
-- 📄 문서 기반 — 문서 품질 = 코드 품질
-- 🎭 역할 부여 — AI에게 전문가 역할을 줘서 품질 향상
+### Steering (Rules)
+- **app-development-flow.md**: 9-step dev flow (plan->review->design->spec->implement)
+- **code-quality-rules.md**: Pure functions, SRP, DI, modularization
+
+### Hooks (Automation - Kiro only)
+- **doc-first-reminder**: Prevents code changes without updating docs first
+- **code-quality-check**: Verifies code quality after every writructions.md all contain the same methodology.
+
+## 9-Step Flow
+1. Planning Draft
+2. Planning Review (AI Multi-Persona)
+3. Planning Finalization
+4. Design
+5. Design Review
+6. Design Finalization
+7. Dev Spec Discussion
+8. Dev Guide
+9. Implementation
+
+## Core Philosophy
+- Start light, iterate fast
+- Server cost $0/month (free tiers only)
+- AI multi-persona review for quality
+- Docs = source of truth. Update docs before code.
+- Pure functions, single responsibility, DI, modularization
