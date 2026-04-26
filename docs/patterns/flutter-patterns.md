@@ -1,10 +1,6 @@
----
-inclusion: manual
----
+# Flutter Performance Patterns
 
-# React Native Performance Patterns
-
-Add React Native-specific issues and solutions here as they are discovered.
+Add Flutter-specific issues and solutions here as they are discovered.
 
 ## Template
 

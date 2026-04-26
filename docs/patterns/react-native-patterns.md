@@ -1,10 +1,6 @@
----
-inclusion: manual
----
+# React Native Performance Patterns
 
-# Android Jetpack Compose Performance Patterns
-
-Add Compose-specific issues and solutions here as they are discovered.
+Add React Native-specific issues and solutions here as they are discovered.
 
 ## Template
 

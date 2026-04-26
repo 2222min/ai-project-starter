@@ -118,7 +118,7 @@ Change request -> Analyze -> Update docs -> Modify code
 This project includes platform-specific pattern guides with real-world gotchas and solutions.
 **Always read the relevant platform file before writing code.**
 
-Available in `.kiro/steering/platforms/`:
+Available in `docs/patterns/`:
 - `ios-swiftui-patterns.md` — 17 SwiftUI patterns from real iOS development (debounce, caching, touch areas, animations, Liquid Glass, etc.)
 - `flutter-patterns.md` — Flutter patterns (add as discovered)
 - `android-compose-patterns.md` — Jetpack Compose patterns (add as discovered)
@@ -130,7 +130,7 @@ When you discover a new pattern or gotcha, add it to the platform file.
 
 ## Troubleshooting Log
 
-`.kiro/steering/troubleshooting-log.md` records issues discovered during development.
+`docs/troubleshooting/log.md` records issues discovered during development.
 
 **Before writing code:** Check if a relevant issue/pattern exists in the log.
 **After fixing a bug:** Add entry with Problem, Root Cause, Solution, Prevention.

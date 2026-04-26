@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "name": "Troubleshooting Log Reminder",
-  "description": "After fixing a bug or resolving an issue, reminds to document the problem and solution in the troubleshooting log.",
+  "description": "After fixing a bug, reminds to document in troubleshooting log.",
   "version": "1",
   "when": {
     "type": "postToolUse",
@@ -11,6 +11,6 @@
   },
   "then": {
     "type": "askAgent",
-    "prompt": "If you just fixed a bug, resolved a tricky issue, or discovered a non-obvious pattern, check if it is already documented in .kiro/steering/troubleshooting-log.md. If not, add a new entry with: Problem, Root Cause, Solution, and Prevention rule. This helps avoid repeating the same issue. If this was a routine code write (not a bug fix), ignore this reminder."
+    "prompt": "If you just fixed a bug or discovered a non-obvious pattern, check if it is already documented in docs/troubleshooting/log.md. If not, add a new entry with: Problem, Root Cause, Solution, Prevention. If this was routine code (not a bug fix), ignore."
   }
 }

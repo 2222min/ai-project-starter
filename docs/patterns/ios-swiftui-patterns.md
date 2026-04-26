@@ -1,7 +1,3 @@
----
-inclusion: manual
----
-
 # iOS SwiftUI Performance Patterns
 
 Real-world SwiftUI issues and solutions discovered during development.

@@ -1,10 +1,6 @@
----
-inclusion: manual
----
+# Android Jetpack Compose Performance Patterns
 
-# Web React/Next.js Performance Patterns
-
-Add React/Next.js-specific issues and solutions here as they are discovered.
+Add Compose-specific issues and solutions here as they are discovered.
 
 ## Template
 
