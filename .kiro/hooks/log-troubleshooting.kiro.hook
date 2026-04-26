@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Troubleshooting Log Reminder",
+  "description": "After fixing a bug or resolving an issue, reminds to document the problem and solution in the troubleshooting log.",
+  "version": "1",
+  "when": {
+    "type": "postToolUse",
+    "toolTypes": [
+      "write"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "If you just fixed a bug, resolved a tricky issue, or discovered a non-obvious pattern, check if it is already documented in .kiro/steering/troubleshooting-log.md. If not, add a new entry with: Problem, Root Cause, Solution, and Prevention rule. This helps avoid repeating the same issue. If this was a routine code write (not a bug fix), ignore this reminder."
+  }
+}
