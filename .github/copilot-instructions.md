@@ -111,3 +111,28 @@ Change request -> Analyze -> Update docs -> Modify code
 - Server cost $0/month (free tiers only)
 - BaaS over custom implementation
 - v1 = core features only
+
+
+## Platform-Specific Patterns
+
+This project includes platform-specific pattern guides with real-world gotchas and solutions.
+**Always read the relevant platform file before writing code.**
+
+Available in `.kiro/steering/platforms/`:
+- `ios-swiftui-patterns.md` — 17 SwiftUI patterns from real iOS development (debounce, caching, touch areas, animations, Liquid Glass, etc.)
+- `flutter-patterns.md` — Flutter patterns (add as discovered)
+- `android-compose-patterns.md` — Jetpack Compose patterns (add as discovered)
+- `react-native-patterns.md` — React Native patterns (add as discovered)
+- `web-react-patterns.md` — React/Next.js patterns (add as discovered)
+
+When starting implementation (Step 9), read the relevant platform file first.
+When you discover a new pattern or gotcha, add it to the platform file.
+
+## Troubleshooting Log
+
+`.kiro/steering/troubleshooting-log.md` records issues discovered during development.
+
+**Before writing code:** Check if a relevant issue/pattern exists in the log.
+**After fixing a bug:** Add entry with Problem, Root Cause, Solution, Prevention.
+
+This prevents repeating the same mistakes across sessions.
