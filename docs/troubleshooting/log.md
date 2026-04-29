@@ -1,35 +1,24 @@
-# Troubleshooting Log
+# 🔧 트러블슈팅 로그
 
-This file records issues discovered during development and their solutions.
-AI must always reference this log before writing code to avoid repeating known issues.
+> 개발 중 발생한 이슈와 해결 방법을 기록합니다.
+> AI가 코딩 전에 이 파일을 확인하여 같은 실수를 반복하지 않습니다.
 
-## How to Use
+## 사용법
 
-### When Reading (Always)
-- Before writing any code, check if a relevant pattern/issue exists here
-- Apply known solutions proactively, do not repeat past mistakes
+새 이슈 발생 시 아래 템플릿을 복사해서 추가하세요:
 
-### When Writing (After fixing a bug)
-Add a new entry using this format:
+```markdown
+### [날짜] 이슈 제목
 
-```
-## [Number]. [Short Title]
-
-### Problem
-[What went wrong]
-
-### Root Cause
-[Why it happened]
-
-### Solution
-[How it was fixed, with code example]
-
-### Prevention
-[Rule to follow to avoid this in the future]
+**증상**: 어떤 문제가 발생했는지
+**원인**: 왜 발생했는지
+**해결**: 어떻게 해결했는지
+**관련 파일**: 영향받은 파일 목록
+**교훈**: 다음에 주의할 점
 ```
 
 ---
 
-## Issue Log
+## 이슈 목록
 
-(Issues will be added here as they are discovered during development.)
+아직 기록된 이슈가 없습니다.
