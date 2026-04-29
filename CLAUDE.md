@@ -1,138 +1,39 @@
 # Project Instructions (Claude)
 
-This project follows a 9-step AI app development methodology.
+이 프로젝트는 AI 기반 9단계 앱 개발 방법론을 따릅니다.
 
-## 9-Step Development Flow
+## 개발 플로우 (9단계)
 
-When user describes an app idea, execute this flow automatically:
+1. **기획 초안** -> docs/planning/v1_기획안.md
+2. **기획 리뷰** (AI 멀티 페르소나) -> docs/planning/v1_리뷰.md
+3. **기획 확정** -> docs/planning/FINAL_기획안.md
+4. **디자인** (Figma / 코드 직행 / 전체 플로우)
+5. **디자인 리뷰** (UI/UX/일관성/기획정합성)
+6. **디자인 확정** -> docs/dev/개발의뢰서.md
+7. **개발 스펙 논의** (비용 $0 목표) -> docs/dev/개발스펙_논의록.md
+8. **개발 가이드 작성** -> docs/dev/
+9. **구현** (문서 기반 코드 생성 + 자체 리뷰)
 
-### Step 1: Planning Draft -> docs/planning/v1_plan.md
-Project overview, core features (v1 vs future), ASCII wireframes,
-tech requirements (server free tier), data model, non-functional requirements.
+각 단계 완료 후 사용자 확인을 받고 다음 단계로 진행합니다.
 
-### Step 2: Planning Review (AI Multi-Persona) -> docs/planning/v1_review.md
-AI reviews from 3 expert perspectives simultaneously:
+## 코드 품질 4원칙
 
-**Usability Expert:**
-- User flow issues, too many steps, quick path suggestions, minimal taps
+1. **순수 함수**: 비즈니스 로직은 순수 함수로. 부수 효과 분리
+2. **모듈화**: 기능별 파일 분리. 300줄 이하. 느슨한 결합
+3. **단일 책임**: 함수 하나 = 일 하나. "and" 금지
+4. **SOLID**: Protocol/Interface에 의존. 구체 구현 주입
 
-**Visibility Expert:**
-- Visual emphasis on important info, priority/deadline visualization,
-  empty state handling, visual hierarchy
+## 변경 관리 (필수)
 
-**Readability Expert:**
-- Information density, 1st/2nd level hierarchy, screen overload,
-  completed item handling
+코드를 직접 수정하지 않는다. 반드시 문서부터 업데이트한다.
 
-Classify: Red (must fix) / Yellow (recommended)
+## Claude 전용 팁
 
-### Step 3: Planning Finalization -> docs/planning/FINAL_plan.md
+- 긴 기획안 작성, 멀티 페르소나 리뷰에 강점 활용
+- /init 명령으로 프로젝트 구조 먼저 파악
+- PROGRESS.md를 확인해서 현재 진행 단계 파악
+- 트러블슈팅 이슈는 docs/troubleshooting/log.md에 기록
 
-### Step 4: Design (Figma / Skip to code / Full flow)
+## 상세 규칙
 
-### Step 5: Design Review (AI Multi-Persona)
-AI reviews from 4 expert perspectives:
-
-**UI/Visual Expert (Senior, 8yr):**
-- Visual polish, color consistency, typography, spacing/alignment
-
-**UX/Interaction Expert (Senior, 7yr):**
-- Flow smoothness, touch targets (44x44pt min), interaction feedback, navigation
-
-**Consistency/Accessibility Expert (Mid, 4yr):**
-- Font/color/radius consistency, WCAG compliance, contrast ratios
-
-**Planning Alignment Expert (Mid, 3yr):**
-- All planned features in design? Extra features not in plan?
-- Reverse feedback: update FINAL plan if missing screens found
-
-### Step 6: Design Finalization -> docs/dev/dev_brief.md
-
-### Step 7: Dev Spec Discussion (AI Multi-Persona) -> docs/dev/dev_spec.md
-AI discusses from 2 expert perspectives:
-
-**Senior Developer (Architecture):**
-- Tech stack, architecture patterns, cost optimization, code quality integration
-
-**Server Developer:**
-- Serverless vs BaaS, free tier analysis, data structure, auth strategy
-- Cost checklist: Firebase Spark / Supabase Free / Cloudflare Workers Free
-
-### Step 8: Dev Guide -> docs/dev/
-
-### Step 9: Implementation + Self-Review
-Order: setup -> models -> pure logic -> protocols -> services -> store -> UI -> components
-Self-review after each feature from senior dev perspective.
-
-## Code Quality 4 Principles (Required)
-
-1. **Pure Functions**: Business logic as pure functions. Separate side effects.
-   Same input = same output. Store calls pure logic, applies results.
-
-2. **Modularization**: Split by feature. Max 300 lines/file. Loose coupling.
-   domain/ depends on nothing. features/ never depend on each other.
-
-3. **Single Responsibility**: One function = one job.
-   View = rendering, Logic = computation, Store = state management.
-
-4. **SOLID**: Depend on Protocol/Interface. Inject implementations.
-
-## Folder Structure
-```
-src/
-  app/              Entry point, routing
-  core/components/  Shared UI
-  core/extensions/  Utilities
-  data/store/       State management
-  data/services/    External services
-  domain/models/    Data models
-  domain/logic/     Pure business logic
-  domain/protocols/ Abstractions
-  features/         Per-screen modules
-```
-
-## Data Flow
-```
-User -> View -> Store -> domain/logic (pure) -> new state -> UI re-render
-```
-
-## Change Management (Required)
-NEVER modify code directly. Always update docs first.
-Change request -> Analyze -> Update docs -> Modify code
-
-| Change Type | Scope |
-|------------|-------|
-| Add feature | Plan -> Design -> Spec -> Code |
-| Modify feature | Plan -> Design -> Code |
-| UI change | Design -> Code |
-| Bug fix | Verify plan -> Code only |
-
-## Cost Minimization
-- Server cost $0/month (free tiers only)
-- BaaS over custom implementation
-- v1 = core features only
-
-
-## Platform-Specific Patterns
-
-This project includes platform-specific pattern guides with real-world gotchas and solutions.
-**Always read the relevant platform file before writing code.**
-
-Available in `docs/patterns/`:
-- `ios-swiftui-patterns.md` — 17 SwiftUI patterns from real iOS development (debounce, caching, touch areas, animations, Liquid Glass, etc.)
-- `flutter-patterns.md` — Flutter patterns (add as discovered)
-- `android-compose-patterns.md` — Jetpack Compose patterns (add as discovered)
-- `react-native-patterns.md` — React Native patterns (add as discovered)
-- `web-react-patterns.md` — React/Next.js patterns (add as discovered)
-
-When starting implementation (Step 9), read the relevant platform file first.
-When you discover a new pattern or gotcha, add it to the platform file.
-
-## Troubleshooting Log
-
-`docs/troubleshooting/log.md` records issues discovered during development.
-
-**Before writing code:** Check if a relevant issue/pattern exists in the log.
-**After fixing a bug:** Add entry with Problem, Root Cause, Solution, Prevention.
-
-This prevents repeating the same mistakes across sessions.
+.kiro/steering/ 폴더의 steering 파일 참조

@@ -1,11 +1,41 @@
+# OS
 .DS_Store
 Thumbs.db
+Desktop.ini
+
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
+*~
+
+# Kiro
+.kiro/steering/*.local.md
+
+# Dependencies (프로젝트에 맞게 주석 해제)
+# node_modules/
+# .build/
+# Pods/
+# vendor/
+
+# Build outputs (프로젝트에 맞게 주석 해제)
+# dist/
+# build/
+# .next/
+# DerivedData/
+
+# Environment & Secrets
 .env
 .env.local
 .env.*.local
+*.pem
+*.key
+
+# Logs
 *.log
 npm-debug.log*
+
+# Test coverage
+coverage/
+.nyc_output/
