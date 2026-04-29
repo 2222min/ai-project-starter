@@ -67,7 +67,9 @@ AI가 "앱 개발 플로우를 시작할게요"라고 물어보면 "ㅇㅇ"이�
 ai-project-starter/
 ├── .kiro/steering/                     # Kiro 설정 (핵심 엔진)
 │   ├── app-development-flow.md         # 9단계 플로우
-│   └── code-quality-rules.md           # 코드 품질 규칙
+│   ├── code-quality-rules.md           # 코드 품질 규칙
+│   ├── figma-code-reflection.md        # Figma-Code 반영 규칙
+│   └── shared-knowledge.md             # 공통 지식 참조
 ├── .github/copilot-instructions.md     # Copilot 설정
 ├── CLAUDE.md                           # Claude Code 설정
 ├── AGENTS.md                           # Codex 설정
@@ -75,8 +77,9 @@ ai-project-starter/
 ├── .windsurfrules                      # Windsurf 설정
 ├── PROGRESS.md                         # 진행 상황 추적
 ├── docs/                               # 산출물 (플로우 진행 시 자동 생성)
+│   ├── agents/                         # 모든 AI 에이전트 공통 규칙 원본
 │   ├── planning/                       # 기획 문서
-│   ├── design/                         # 디자인 문서
+│   ├── design/                         # 디자인 문서, Figma 참조 문서
 │   ├── dev/                            # 개발 스펙, 가이드
 │   ├── troubleshooting/log.md          # 트러블슈팅 로그
 │   └── AI_앱개발_방법론_가이드.md        # 상세 방법론 설명서
@@ -94,6 +97,7 @@ ai-project-starter/
 | 🔄 반복 리뷰 | AI에게 여러 역할을 줘서 반복 검토 → 품질 향상 |
 | 📄 문서 = 설계도 | 문서 품질 = 코드 품질. AI는 문서를 보고 코드를 생성 |
 | 🔒 문서 먼저 | 코드 직접 수정 금지. 반드시 문서부터 업데이트 |
+| 🎨 Figma 기준 | UI 변경은 Figma MCP와 `docs/design/figma_reference.md`를 기준으로 반영 |
 
 ---
 
@@ -115,6 +119,20 @@ ai-project-starter/
 9단계 방법론의 상세 설명, 각 단계별 프롬프트 예시, 실전 팁:
 
 → [`docs/AI_앱개발_방법론_가이드.md`](docs/AI_앱개발_방법론_가이드.md)
+
+## 🤖 공통 에이전트 규칙
+
+모든 AI 도구가 같은 기준을 따르도록 공통 규칙은 `docs/agents/`에 모았습니다.
+
+- [`docs/agents/README.md`](docs/agents/README.md): 읽는 순서와 에이전트별 진입점
+- [`docs/agents/workflow-harness.md`](docs/agents/workflow-harness.md): 요청별 작업 하네스
+- [`docs/agents/development-flow.md`](docs/agents/development-flow.md): 9단계 플로우와 페르소나 리뷰
+- [`docs/agents/figma-code-reflection.md`](docs/agents/figma-code-reflection.md): Figma-Code 반영 규칙
+- [`docs/agents/change-management.md`](docs/agents/change-management.md): 문서 우선 변경 관리
+- [`docs/agents/implementation-planning.md`](docs/agents/implementation-planning.md): 구현 전 작업 계획
+- [`docs/agents/test-and-verification.md`](docs/agents/test-and-verification.md): 테스트 우선과 완료 전 검증
+- [`docs/agents/debugging.md`](docs/agents/debugging.md): 원인 중심 디버깅
+- [`docs/agents/code-quality.md`](docs/agents/code-quality.md): 코드 품질 규칙
 
 ---
 

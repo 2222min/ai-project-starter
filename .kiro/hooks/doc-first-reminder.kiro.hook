@@ -9,6 +9,6 @@
   },
   "then": {
     "type": "askAgent",
-    "prompt": "Before modifying code files, verify: Have the relevant docs been updated first? If this is a feature change and docs have NOT been updated, update docs first. If this is part of an already-documented plan or a non-code file, proceed normally."
+    "prompt": "Before modifying code files, verify docs/agents/workflow-harness.md and docs/agents/change-management.md. Have the relevant docs been updated first? If this is a feature/UI change and docs have NOT been updated, update docs first. For UI changes, also verify docs/agents/figma-code-reflection.md and docs/design/figma_reference.md. For non-trivial implementation, verify docs/agents/implementation-planning.md. If this is part of an already-documented plan or a non-code file, proceed normally."
   }
 }

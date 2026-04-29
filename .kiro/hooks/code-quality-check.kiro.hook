@@ -9,6 +9,6 @@
   },
   "then": {
     "type": "askAgent",
-    "prompt": "A code file was just written. If source code (not config/docs), verify: 1) Business logic in pure functions 2) File under 300 lines 3) Each function does one thing 4) Dependencies on abstractions 5) Correct folder. Fix violations. Ignore for non-code files."
+    "prompt": "A code file was just written. If source code (not config/docs), verify docs/agents/code-quality.md and docs/agents/test-and-verification.md: 1) Business logic in pure functions 2) File under 300 lines 3) Each function does one thing 4) Dependencies on abstractions 5) Correct folder 6) Relevant tests or verification were run. For UI code, also compare with docs/design/figma_reference.md and record any pending Figma/code reflection. Fix violations. Ignore for non-code files."
   }
 }

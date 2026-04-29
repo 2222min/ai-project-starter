@@ -11,6 +11,6 @@
   },
   "then": {
     "type": "askAgent",
-    "prompt": "If you just fixed a bug or discovered a non-obvious pattern, check if it is already documented in docs/troubleshooting/log.md. If not, add a new entry with: Problem, Root Cause, Solution, Prevention. If this was routine code (not a bug fix), ignore."
+    "prompt": "If you just fixed a bug or discovered a non-obvious pattern, check docs/agents/debugging.md, docs/agents/code-quality.md, and docs/troubleshooting/log.md. If the issue is not documented, add a new entry with: Problem, Root Cause, Solution, Prevention. If this was routine code (not a bug fix), ignore."
   }
 }

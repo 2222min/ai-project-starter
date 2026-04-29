@@ -6,6 +6,17 @@ inclusion: auto
 
 This steering is always active for all app development requests.
 
+Canonical shared rules:
+- `docs/agents/README.md`
+- `docs/agents/workflow-harness.md`
+- `docs/agents/development-flow.md`
+- `docs/agents/change-management.md`
+- `docs/agents/figma-code-reflection.md`
+- `docs/agents/implementation-planning.md`
+- `docs/agents/test-and-verification.md`
+- `docs/agents/debugging.md`
+- `docs/agents/code-quality.md`
+
 ## Trigger
 When user describes an app idea, start this 9-step flow with confirmation.
 
@@ -70,6 +81,10 @@ Output: `docs/planning/FINAL_plan.md`
 ## Step 4: Design
 A) Figma (MCP tools)  B) Skip to code (step 7)  C) Full design flow
 
+Figma MCP is the default design source. When Figma is used, record file URL,
+screen node IDs/URLs, component node IDs/URLs, and screen-to-code mapping in
+`docs/design/figma_reference.md`.
+
 ---
 
 ## Step 5: Design Review (AI Multi-Persona)
@@ -107,6 +122,9 @@ Output: `docs/design/design_review.md`
 ## Step 6: Design Finalization
 Apply review feedback, repeat if needed.
 Output: `docs/dev/dev_brief.md`
+
+Before moving to development specs, ensure Figma node references are recorded
+in `docs/design/figma_reference.md`.
 
 ---
 

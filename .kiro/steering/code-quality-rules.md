@@ -6,6 +6,8 @@ inclusion: auto
 
 Always active when generating or modifying code.
 
+Canonical shared rule: `docs/agents/code-quality.md`
+
 ## 1. Pure Functions (Required)
 - Business logic MUST be pure functions
 - Same input = same output. No external state mutation
