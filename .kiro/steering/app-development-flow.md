@@ -12,6 +12,7 @@ Canonical shared rules:
 - `docs/agents/development-flow.md`
 - `docs/agents/change-management.md`
 - `docs/agents/figma-code-reflection.md`
+- `docs/agents/ux-design-laws.md`
 - `docs/agents/implementation-planning.md`
 - `docs/agents/test-and-verification.md`
 - `docs/agents/debugging.md`
@@ -90,6 +91,10 @@ screen node IDs/URLs, component node IDs/URLs, and screen-to-code mapping in
 ## Step 5: Design Review (AI Multi-Persona)
 
 AI performs review from 4 expert perspectives:
+
+Also use `docs/agents/ux-design-laws.md` to check cognitive load,
+choice overload, feedback, information structure, Gestalt principles,
+and user behavior patterns.
 
 ### Persona 1: UI/Visual Expert (Senior, 8yr)
 - Visual completeness and polish

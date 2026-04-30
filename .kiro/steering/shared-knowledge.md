@@ -11,6 +11,7 @@ These project-wide knowledge bases are in docs/ so all AI tools can access them.
 - `workflow-harness.md` — choose the right workflow before edits
 - `development-flow.md` — 9-step app development flow and persona reviews
 - `figma-code-reflection.md` — Figma MCP and code reflection rules
+- `ux-design-laws.md` — UX laws checklist for design and UI review
 - `change-management.md` — document-first change order
 - `implementation-planning.md` — small, verifiable implementation planning
 - `test-and-verification.md` — test-first and completion verification

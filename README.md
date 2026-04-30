@@ -128,6 +128,7 @@ ai-project-starter/
 - [`docs/agents/workflow-harness.md`](docs/agents/workflow-harness.md): 요청별 작업 하네스
 - [`docs/agents/development-flow.md`](docs/agents/development-flow.md): 9단계 플로우와 페르소나 리뷰
 - [`docs/agents/figma-code-reflection.md`](docs/agents/figma-code-reflection.md): Figma-Code 반영 규칙
+- [`docs/agents/ux-design-laws.md`](docs/agents/ux-design-laws.md): UX 법칙 기반 디자인 체크리스트
 - [`docs/agents/change-management.md`](docs/agents/change-management.md): 문서 우선 변경 관리
 - [`docs/agents/implementation-planning.md`](docs/agents/implementation-planning.md): 구현 전 작업 계획
 - [`docs/agents/test-and-verification.md`](docs/agents/test-and-verification.md): 테스트 우선과 완료 전 검증

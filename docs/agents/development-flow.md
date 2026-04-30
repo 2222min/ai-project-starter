@@ -75,6 +75,8 @@ AI가 4개 관점으로 자율 리뷰합니다.
 | Consistency/Accessibility 전문가 | 폰트/색상/라운드 일관성, WCAG, 대비, 스크린 리더 고려 |
 | Planning Alignment 전문가 | 기획 반영 여부, 기획에 없는 기능 여부, 화면별 기획 비교 |
 
+디자인 리뷰 시 `docs/agents/ux-design-laws.md`를 참고해 인지 부하, 선택 과부하, 피드백, 정보 구조, 게슈탈트 원칙, 사용자 행동 패턴을 함께 점검합니다.
+
 누락 화면이 발견되면 `docs/planning/FINAL_기획안.md`도 함께 갱신합니다.
 
 ## 6. 디자인 확정

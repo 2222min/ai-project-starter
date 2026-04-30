@@ -35,7 +35,7 @@ Figma MCP를 디자인의 기본 소스로 사용합니다. 코드와 디자인 
 2. `docs/design/figma_reference.md`를 먼저 갱신합니다.
 3. 필요하면 `docs/dev/개발의뢰서.md` 또는 개발 가이드를 갱신합니다.
 4. 코드에 반영합니다.
-5. 반영 후 UI/UX/일관성/기획정합성 페르소나로 자체 리뷰합니다.
+5. 반영 후 UI/UX/일관성/기획정합성 페르소나와 `docs/agents/ux-design-laws.md` 기준으로 자체 리뷰합니다.
 
 ## 반영 예외
 

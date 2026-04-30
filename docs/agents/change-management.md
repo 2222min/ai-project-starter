@@ -12,6 +12,8 @@
 - "개선해줘"
 - "구현해줘"
 - "화면/UI를 바꿔줘"
+- "더 직관적으로 바꿔줘"
+- "사용성 좋게 바꿔줘"
 - "Figma를 수정했어"
 - "코드에 맞춰 Figma도 바꿔줘"
 
@@ -36,6 +38,7 @@
 
 - 코드 파일 수정 전: 관련 문서가 먼저 업데이트되었는지 확인합니다.
 - UI 코드 수정 전: Figma 노드 정보와 `docs/design/figma_reference.md` 최신 여부를 확인합니다.
+- UI/디자인 변경 전: `docs/agents/ux-design-laws.md`에서 관련 법칙을 확인합니다.
 - 코드 작성 후: 순수 함수, 300줄 이하, 단일 책임, 추상화 의존, 올바른 폴더 위치를 점검합니다.
 - UI 코드 작성 후: Figma 노드와 화면 구현의 차이를 확인하고 필요한 경우 Figma 또는 코드를 다시 맞춥니다.
 - 버그 수정 후: `docs/troubleshooting/log.md`에 Problem, Root Cause, Solution, Prevention 형식으로 기록합니다.

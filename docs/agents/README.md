@@ -8,13 +8,14 @@
 2. `docs/agents/workflow-harness.md`
 3. `docs/agents/development-flow.md`
 4. `docs/agents/figma-code-reflection.md`
-5. `docs/agents/change-management.md`
-6. `docs/agents/implementation-planning.md`
-7. `docs/agents/test-and-verification.md`
-8. `docs/agents/debugging.md`
-9. `docs/agents/code-quality.md`
-10. 작업과 관련된 `docs/planning/`, `docs/design/`, `docs/dev/`, `docs/patterns/`
-11. 구현 또는 버그 수정 전 `docs/troubleshooting/log.md`
+5. `docs/agents/ux-design-laws.md`
+6. `docs/agents/change-management.md`
+7. `docs/agents/implementation-planning.md`
+8. `docs/agents/test-and-verification.md`
+9. `docs/agents/debugging.md`
+10. `docs/agents/code-quality.md`
+11. 작업과 관련된 `docs/planning/`, `docs/design/`, `docs/dev/`, `docs/patterns/`
+12. 구현 또는 버그 수정 전 `docs/troubleshooting/log.md`
 
 ## 에이전트별 진입점
 

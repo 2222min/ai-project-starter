@@ -22,6 +22,7 @@
 | 구현 계획 필요 | `implementation-planning.md` | 작은 작업 단위로 계획 작성 |
 | 코드/UI 변경 | `change-management.md` | 문서 먼저, UI는 Figma 참조 확인 |
 | Figma 또는 UI 변경 | `figma-code-reflection.md` | Figma, 문서, 코드 반영 상태 맞추기 |
+| UX/디자인 판단 | `ux-design-laws.md` | 인지 부하, 선택지, 피드백, 정보 구조 점검 |
 | 기능/버그 구현 | `test-and-verification.md` | 가능한 범위에서 실패 테스트 먼저 작성 |
 | 버그/실패 조사 | `debugging.md` | 원인 조사 후 최소 수정 |
 | 완료 보고/커밋/푸시 | `test-and-verification.md` | 검증 명령 실행 후 결과 보고 |

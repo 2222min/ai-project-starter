@@ -11,17 +11,19 @@
 3. `docs/agents/workflow-harness.md`
 4. `docs/agents/development-flow.md`
 5. `docs/agents/figma-code-reflection.md`
-6. `docs/agents/change-management.md`
-7. `docs/agents/implementation-planning.md`
-8. `docs/agents/test-and-verification.md`
-9. `docs/agents/debugging.md`
-10. `docs/agents/code-quality.md`
+6. `docs/agents/ux-design-laws.md`
+7. `docs/agents/change-management.md`
+8. `docs/agents/implementation-planning.md`
+9. `docs/agents/test-and-verification.md`
+10. `docs/agents/debugging.md`
+11. `docs/agents/code-quality.md`
 
 ## Copilot 작업 규칙
 
 - 코드를 직접 수정하지 않고, 관련 문서를 먼저 업데이트합니다.
 - 수정/추가/구현 요청은 `docs/agents/workflow-harness.md`를 먼저 적용합니다.
 - UI 변경은 Figma MCP와 `docs/design/figma_reference.md`를 기준으로 반영합니다.
+- UX/디자인 판단은 `docs/agents/ux-design-laws.md`를 기준으로 점검합니다.
 - 구현 또는 버그 수정 전 `docs/troubleshooting/log.md`와 관련 `docs/patterns/` 문서를 확인합니다.
 - 완료 보고 전 방금 실행한 검증 결과를 확인합니다.
 - 단계 완료 시 `PROGRESS.md`를 갱신합니다.
